@@ -12,7 +12,7 @@
     <select name="select_category">
         {foreach from=$categorys item=category}
             {if $category->id_categoria == $producto->id_categoria}
-                <option selected="{$category->id_categoria}">{$category->nombre_categoria}</option>
+                <option selected="{$category->id_categoria}" value="{$category->id_categoria}">{$category->nombre_categoria}</option>
             {else}
                 <option value="{$category->id_categoria}">{$category->nombre_categoria}</option>
             {/if}
