@@ -1,11 +1,13 @@
 <?php
 
+    require_once 'config.php';
+
     class ProductsModel{
 
         private $db;
         //CONEXIÓN CON LA BDD
         function __construct(){
-            $this->db = new PDO('mysql:host=localhost;'.'dbname=articulos;charset=utf8', 'root', '');
+            $this->db = new PDO("mysql:host=" . HOST . ";dbname=" . NAME, USER, PASSWORD);
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
         }
         //OBTENGO PRODUCTOS

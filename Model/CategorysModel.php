@@ -1,11 +1,13 @@
 <?php
 
+    require_once 'config.php';
+
     class CategorysModel{
 
         private $db;
         //CONEXIÓN CON LA BDD
         function __construct(){
-            $this->db = new PDO('mysql:host=localhost;'.'dbname=articulos;charset=utf8', 'root', '');
+            $this->db = new PDO("mysql:host=" . HOST . ";dbname=" . NAME, USER, PASSWORD);
         }
         //OBTENGO CATEGORIAS
         function GetCategorys(){
