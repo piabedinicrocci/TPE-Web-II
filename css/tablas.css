@@ -1,0 +1,179 @@
+.contenedor_table{
+    width: 100%;
+    justify-content: center;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 4%;
+    margin: auto;
+}
+
+.table_productos{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    border-collapse: collapse;
+}
+
+.titulo_table{
+    padding: 2% 0;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    background-image: url(../images/fondomármol.jpg);
+}
+
+th, td{
+    border: 1px solid rgb(170, 170, 170);
+    text-transform: capitalize;
+    justify-content: center;
+    justify-items: center;
+    padding: 1%;
+}
+
+.excepcion{ 
+    border: inset 0pt;
+    padding: 0;
+}
+
+.btn{
+    margin: 1%;
+}
+/*LOGOUT*/
+.contenedor_cerrarSesion {
+    background-color: rgb(229, 224, 224);
+    border: 1px solid white;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    right: 0;
+    margin: 0 auto;
+}
+
+.cerrarSesion{
+    text-transform: uppercase;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+    margin-bottom: 5%;
+}
+
+.btn_logout{
+    margin-left: 30%;
+    align-items: center;
+    align-content: center;
+}
+
+button{
+    margin: 0 2%;
+}
+
+form{
+    margin: 2% 0;
+    text-align: center;
+}
+
+button{
+    padding: 1%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+.input{
+    width: 80%;
+    margin: 2%;
+    text-align: center;
+}
+
+select{
+    height: 33px;
+}
+
+/*MENSAJE DE ALERTA DE ELIMINADO DE UNA CATEGORIA*/
+.close {
+    display: none;
+}
+
+#alert{
+    background-color: rgb(243, 193, 193);
+    padding: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(155, 17, 17);
+}
+
+.sowAlert{
+    width: 20px;
+    font-size: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: rgb(155, 17, 17);
+}
+
+/*MENSAJE DE CONTRASEÑA INCORRECTA*/
+h2{
+    background-image: url(../images/fondomármolnegro.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2%;
+    margin: 2% 0;
+}
+
+h1{
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(85, 85, 85);
+    background-image: url(../images/fondo.jpg);
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+
+@media only screen and (min-width: 600px){
+    
+    .table{
+        width: 70%;
+    }
+    
+    .titulo_table{
+        font-size: 20px;
+    }
+    
+    form{
+        margin: 2% 0;
+        text-align: center;
+    }
+    
+    input, button{
+        padding: 0.5%;
+        font-size: 14px;
+    }
+    
+    .input{
+        width: 10%;
+        margin: 0;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+    /*MENSAJE DE CONTRASEÑA INCORRECTA*/
+    h2{
+        font-size: 25px;
+    }
+}
