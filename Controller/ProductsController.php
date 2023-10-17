@@ -80,11 +80,7 @@
                     $material = $_POST['edit_material'];
                     $price = $_POST['edit_price'];
                     $stock = $_POST['edit_stock'];
-                    if (isset($_POST['select_category'])) {
-                        $category = $_POST['select_category'];
-                    } else {
-                        $_POST['select_category'] = $product->id_categoria;
-                    }
+                    $category = $_POST['select_category'];
                     $this->model->UpdateProduct($product,$description,$material,$price,$stock,$category,$product_id);
                 }
                 $this->view->ShowLocation('admin');
