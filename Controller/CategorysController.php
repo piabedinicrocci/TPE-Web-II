@@ -33,7 +33,7 @@
         function InsertCategory(){
             $logueado = $this->loginControl->checkLoggedIn();
             if($logueado){
-                if (isset($_POST['input_category'])) {
+                if (!empty($_POST['input_category'])) {
                     $category = $_POST['input_category'];
                     $this->categorysModel->InsertCategory($category);
                 }
@@ -69,7 +69,7 @@
             $logueado = $this->loginControl->checkLoggedIn();
             if($logueado){
                 $category_id = $params[':ID'];
-                if (isset($_POST['edit_category'])) {
+                if (!empty($_POST['edit_category'])) {
                     $category = $_POST['edit_category'];
                     $this->categorysModel->UpdateCategory($category,$category_id);
                 }

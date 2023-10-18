@@ -31,7 +31,7 @@
         function InsertProduct(){
             $logueado = $this->loginControl->checkLoggedIn();
             if($logueado){
-                if ((isset($_POST['input_product']) && isset($_POST['input_description'])) && (isset($_POST['input_material']) && isset($_POST['input_price'])) && (isset($_POST['input_stock']) && isset($_POST['select_category']))) {
+                if ((!empty($_POST['input_product']) && !empty($_POST['input_description'])) && (!empty($_POST['input_material']) && !empty($_POST['input_price'])) && (!empty($_POST['input_stock']) && !empty($_POST['select_category']))) {
                     $product = $_POST['input_product'];
                     $description = $_POST['input_description'];
                     $material = $_POST['input_material'];
@@ -74,7 +74,7 @@
             if($logueado){
                 $product_id = $params[':ID'];
                 $product = $this->model->GetProductById($product_id);
-                if (isset($_POST['edit_product']) && isset($_POST['edit_description']) && isset($_POST['edit_material']) && isset($_POST['edit_price']) && isset($_POST['edit_stock']) && isset($_POST['select_category'])) {
+                if (!empty($_POST['edit_product']) && !empty($_POST['edit_description']) && !empty($_POST['edit_material']) && !empty($_POST['edit_price']) && !empty($_POST['edit_stock']) && !empty($_POST['select_category'])) {
                     $product = $_POST['edit_product'];
                     $description = $_POST['edit_description'];
                     $material = $_POST['edit_material'];
