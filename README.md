@@ -2,7 +2,6 @@
 
 ## Integrantes:
 - Bedini Pia Maria pbedini@alumnos.exa.unicen.edu.ar
-- Ginter Camila reygintercamila@gmail.com
 
 ## Temática:
 #### Sitio web de venta de accesorios para mujeres
